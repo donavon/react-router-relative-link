@@ -28,7 +28,7 @@ export default class CoreLink extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        this.setState({ currentPath: determineCurrentPath(nextProps) });
+        this.setState({ currentPath: determineCurrentPath(nextProps.currentPath) });
     }
 
     render() {

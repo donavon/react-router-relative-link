@@ -16,12 +16,12 @@ So in your code, replace this:
 ```js
 import { Link } from "react-router";
 ```
-with the following and your good to go!
+with the following and you're good to go!
 ```js
 import { Link } from "react-router-relative-link";
 ```
 
-Here is a real world example. Notice that you don't need to know that you are at the base base `/zoo`, just like everywhere else in webland.
+Here is a real world example. Notice that you don't need to know that you are at the base base `/zoo`, just like everywhere else in web land.
 
 ```js
 import { Link } from "react-router-relative-link";
