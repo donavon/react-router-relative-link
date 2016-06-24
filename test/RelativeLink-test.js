@@ -109,5 +109,20 @@ describe(linkType, function() {
             expect(props.to).to.equal("/foo/bar");
         });
     });
+    describe("when changing props", function() {
+        beforeEach(() => {
+            this.baseLinkSpy = sinon.spy(Component, "BaseComponent");
+            this.currentPath = "/foo";
+        });
+        afterEach(() => {
+            this.baseLinkSpy.restore();
+        });
+        it("respects the new value of `currentPath`", () => {
+            const wrapper = mount(<Component currentPath={this.currentPath} to="bar"/>);
+            wrapper.setProps({ currentPath:"/baz", to:"bar"});
+            const props = this.baseLinkSpy.getCall(0).args[0];
+            expect(props.to).to.equal("/foo/bar");
+        });
+    });
 });
 });
