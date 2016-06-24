@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "name": "react-router-relative-link",
+  "description": "A wrapper around react-router's Link that allows relative paths.",
+  "keywords": [
+    "relative",
+    "path",
+    "pathname",
+    "react-router-relative-link",
+    "react",
+    "react-component"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "prepublish": "npm run lint && npm run _build && npm run _test",
+    "build": "npm run lint && npm run _build",
+    "_build": "babel src --out-dir lib",
+    "test": "npm run lint && npm run _test",
+    "_test": "mocha test/.setup.js test/**/*-test.js",
+    "lint": "eslint src"
+  },
+  "author": {
+    "name": "Donavon West",
+    "email": "email@donavon.com",
+    "url": "http://donavon.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-router": "^2.4.1",
+    "resolve-pathname": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-eslint": "^4.1.8",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.3.0",
+    "eslint": "^1.3.1",
+    "eslint-plugin-react": "^3.3.1",
+    "jsdom": "^9.2.1",
+    "mocha": "^2.5.3",
+    "react-addons-test-utils": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "sinon": "^1.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/donavon/react-router-relative-link.git"
+  },
+  "bugs": {
+    "url": "https://github.com/donavon/react-router-relative-link/issues"
+  },
+  "homepage": "https://github.com/donavon/react-router-relative-link"
+}
