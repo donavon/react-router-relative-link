@@ -34,6 +34,7 @@ export default class CoreLink extends React.Component {
     render() {
         var { BaseComponent, to, ...others} = this.props;
         const currentPath = this.state.currentPath;
+        delete others.currentPath; // So React 15.2 and above doesn't complain about unknown DOM properties.
 
         if (typeof to === "string") {
             to = resolvePathnameNoTrailingSlash(to, currentPath);
