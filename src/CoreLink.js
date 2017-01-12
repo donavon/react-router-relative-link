@@ -7,8 +7,8 @@ const removeLeadingHash = (path) => path.replace(/^#/, "");
 
 const determineCurrentPath = (currentPath) => {
     if (!currentPath) {
-        if (global.location && global.location.hash) {
-            currentPath = removeLeadingHash(global.location.hash);
+        if (window.location && window.location.hash) {
+            currentPath = removeLeadingHash(window.location.hash);
         } else {
             currentPath = "/";
         }
