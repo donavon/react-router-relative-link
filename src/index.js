@@ -1,9 +1,4 @@
-import RelativeLink from "./RelativeLink";
-import { Link } from "react-router";
-RelativeLink.BaseComponent = Link;
+import Link from './RelativeLink';
+import NavLink from './RelativeNavLink';
 
-import RelativeIndexLink from "./RelativeIndexLink";
-import { IndexLink } from "react-router";
-RelativeIndexLink.BaseComponent = IndexLink;
-
-export { RelativeLink as Link, RelativeIndexLink as IndexLink };
+export { Link, NavLink };

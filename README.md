@@ -1,7 +1,10 @@
 # react-router-relative-link
 [![Build Status](https://travis-ci.org/donavon/react-router-relative-link.svg?branch=master)](https://travis-ci.org/donavon/react-router-relative-link)
 
-A wrapper around react-router's Link and LinkIndex that allows relative paths.
+TL;DR
+
+* A wrapper around react-router's `<Link />` and `<NavLink />` that allows relative paths.
+* **Now supports `react-router-dom` version 4!**
 
 ## Install
 ```
@@ -9,12 +12,12 @@ A wrapper around react-router's Link and LinkIndex that allows relative paths.
 ```
 
 ## Usage
-To use `react-router-relative-link`, simply `import` it (ES6) as `Link` in place of `react-router`
+To use `react-router-relative-link`, simply `import` it (ES6) as `Link` in place of `react-router-dom`
 then dot and dot-dot to your heart's content.
 
 So in your code, replace this:
 ```js
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 ```
 with the following and you're good to go!
 ```js
@@ -41,20 +44,12 @@ export default class MyZoo extends React.Component {
 
 `react-router-relative-link` support passing `to` as a string or as an object with a `pathname` property, just like `react-router`.
 
-It also works with both `Link` and with `LinkIndex`.
-
-## FAQ
-
-### Where does it get the current path?
-
-You have two options.
-
-1. Pass it in a property named `currentPath`. This is the current, or base path on which the relative
-pathname will be based.
-
-2. If you don't specify `currentPath`, it will pull the information from `window.location.hash`.
+It also works with both `Link` and with `NavLink`.
 
 ### Does it Work?
 
 Of course it does, and I have the tests to prove it!
 See the [test results](https://travis-ci.org/donavon/react-router-relative-link?branch=master) here.
+
+You can also see it running live on
+[this CodeSandbox](https://codesandbox.io/s/pkpw96w4nq).
