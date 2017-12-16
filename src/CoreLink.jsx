@@ -11,7 +11,7 @@ const extractCurrentPath = currentPath => (
   ensureLeadingAndTrailingSlashes(removeQuery(currentPath))
 );
 
-const CoreLink = ({ BaseComponent, match, to: relativeTo, ...others }) => {
+const CoreLink = ({ BaseComponent, match, to: relativeTo, staticContext, ...others }) => {
   const currentPath = extractCurrentPath(match.url);
   const to = typeof relativeTo === 'object'
     ? {
@@ -25,6 +25,7 @@ const CoreLink = ({ BaseComponent, match, to: relativeTo, ...others }) => {
 
 CoreLink.propTypes = {
   BaseComponent: PropTypes.func.isRequired,
+  staticContext: PropTypes.object,
   match: PropTypes.shape({
     url: PropTypes.string,
   }).isRequired,
