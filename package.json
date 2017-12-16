@@ -58,6 +58,9 @@
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^16.2.0"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/setup-jest.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/donavon/react-router-relative-link.git"
