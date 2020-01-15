@@ -1,4 +1,10 @@
 {
+  "root": true,
+  "overrides": [
+    {
+      "files": ["*.js" ]
+    }
+  ],
   "extends": "airbnb",
   "env": {
     "jest": true
