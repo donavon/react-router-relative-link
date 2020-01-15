@@ -1,3 +1,9 @@
+# This uses react router version 5
+
+Please use original package if you need version 4 or if it has been updated to use version 5
+
+https://www.npmjs.com/package/react-router-relative-link
+
 # react-router-relative-link
 [![Build Status](https://travis-ci.org/donavon/react-router-relative-link.svg?branch=master)](https://travis-ci.org/donavon/react-router-relative-link)
 
@@ -46,10 +52,3 @@ export default class MyZoo extends React.Component {
 
 It also works with both `Link` and with `NavLink`.
 
-### Does it Work?
-
-Of course it does, and I have the tests to prove it!
-See the [test results](https://travis-ci.org/donavon/react-router-relative-link?branch=master) here.
-
-You can also see it running live on
-[this CodeSandbox](https://codesandbox.io/s/pkpw96w4nq).

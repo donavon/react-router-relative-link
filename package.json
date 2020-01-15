@@ -1,7 +1,7 @@
 {
   "version": "5.0.0",
-  "name": "react-router-relative-link",
-  "description": "A wrapper around react-router's Link that allows relative paths.",
+  "name": "react-router-relative-link-5",
+  "description": "A wrapper around react-router's Link that allows relative paths. For react-router version 5",
   "keywords": [
     "relative",
     "path",
@@ -24,9 +24,9 @@
     "lint": "eslint src"
   },
   "author": {
-    "name": "Donavon West",
-    "email": "github@donavon.com",
-    "url": "http://donavon.com"
+    "name": "Giles Bradshaw",
+    "email": "giles.bradshaw@sigyl.com",
+    "url": "https://github.com/gilesbradshaw"
   },
   "license": "MIT",
   "peerDependencies": {
@@ -64,10 +64,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/donavon/react-router-relative-link.git"
+    "url": "git://github.com/gilesbradshaw/react-router-relative-link.git"
   },
   "bugs": {
-    "url": "https://github.com/donavon/react-router-relative-link/issues"
+    "url": "https://github.com/gilesbradshaw/react-router-relative-link/issues"
   },
-  "homepage": "https://github.com/donavon/react-router-relative-link"
+  "homepage": "https://github.com/gilesbradshaw/react-router-relative-link"
 }
