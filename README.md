@@ -10,7 +10,7 @@ https://www.npmjs.com/package/react-router-relative-link
 TL;DR
 
 * A wrapper around react-router's `<Link />` and `<NavLink />` that allows relative paths.
-* **Now supports `react-router-dom` version 4!**
+* **Now supports `react-router-dom` version 5!**
 
 ## Install
 ```

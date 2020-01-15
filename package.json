@@ -1,5 +1,5 @@
 {
-  "version": "5.0.0",
+  "version": "5.0.1",
   "name": "react-router-relative-link-5",
   "description": "A wrapper around react-router's Link that allows relative paths. For react-router version 5",
   "keywords": [
