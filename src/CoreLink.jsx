@@ -24,7 +24,10 @@ const CoreLink = ({ BaseComponent, match, to: relativeTo, staticContext, ...othe
 };
 
 CoreLink.propTypes = {
-  BaseComponent: PropTypes.func.isRequired,
+  BaseComponent: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.object,
+  ]).isRequired,
   staticContext: PropTypes.object,
   match: PropTypes.shape({
     url: PropTypes.string,
