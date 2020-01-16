@@ -1,6 +1,3 @@
-# Ignore Src
-src
-
 # Logs
 logs
 *.log
@@ -29,3 +26,5 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+*.tgz

@@ -1,5 +1,5 @@
 {
-  "version": "5.0.3",
+  "version": "5.0.4",
   "name": "react-router-relative-link-5",
   "description": "A wrapper around react-router's Link that allows relative paths. For react-router version 5",
   "keywords": [
@@ -17,7 +17,7 @@
   "umd": "./lib/index.umd.js",
   "jsnext:main": "./lib/index.es.js",
   "scripts": {
-    "prepublish": "npm run lint && npm run build:rollup && npm run _test",
+    "prepare": "npm run lint && npm run build:rollup && npm run _test",
     "build": "npm run lint && npm run build:rollup",
     "test": "npm run lint && npm run _test",
     "posttest": "cowsay Your tests all passed!",
