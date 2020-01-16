@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import CoreLink from './CoreLink';
+import CoreLink from '../src/CoreLink';
 
 import {
   LinkProps,

@@ -1,5 +1,7 @@
 # This uses react router version 5
 
+It has also been rewritten in typescript
+
 Please use original package if you need version 4 or if it has been updated to use version 5
 
 https://www.npmjs.com/package/react-router-relative-link

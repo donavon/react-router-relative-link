@@ -1,14 +1,14 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import { StaticRouter } from 'react-router-dom';
-import RelativeLink from './RelativeLink';
+import RelativeNavLink from '../src/RelativeNavLink';
 
-describe('RelativeLink', () => {
+describe('RelativeNavLink', () => {
   it('should not cause errors', () => {
     const spy = jest.spyOn(global.console, 'error');
     mount(
       <StaticRouter context={{}}>
-        <RelativeLink to="foo" />
+        <RelativeNavLink to="foo" />
       </StaticRouter>
     );
 

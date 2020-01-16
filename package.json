@@ -1,5 +1,5 @@
 {
-  "version": "5.0.2",
+  "version": "5.0.3",
   "name": "react-router-relative-link-5",
   "description": "A wrapper around react-router's Link that allows relative paths. For react-router version 5",
   "keywords": [
@@ -13,10 +13,12 @@
     "react-component"
   ],
   "main": "./lib/index.js",
+  "module": "./lib/index.es.js",
+  "umd": "./lib/index.umd.js",
+  "jsnext:main": "./lib/index.es.js",
   "scripts": {
-    "prepublish": "npm run lint && npm run _build && npm run _test",
-    "build": "npm run lint && npm run _build",
-    "_build": "babel src --out-dir lib",
+    "prepublish": "npm run lint && npm run build:rollup && npm run _test",
+    "build": "npm run lint && npm run build:rollup",
     "test": "npm run lint && npm run _test",
     "posttest": "cowsay Your tests all passed!",
     "_test": "jest",
@@ -35,8 +37,6 @@
     "react-router-dom": "^5.1.2"
   },
   "dependencies": {
-    "history": "^4.10.1",
-    "prop-types": "^15.5.10",
     "resolve-pathname": "^2.1.0"
   },
   "devDependencies": {
@@ -75,7 +75,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.25.3",
     "ts-jest": "^24.2.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "history": "^4.10.1"
   },
   "jest": {
     "preset": "ts-jest",
